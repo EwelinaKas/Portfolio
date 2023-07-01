@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css_main/main.css' %}">
+    <title> {% block title %} {% endblock title%} </title>
+</head>
+<body>
+    <nav class="navigation">
+        <div class="home"><a href="#}">Home</a></div>
+        <div class="photos">
+            <a href="#">Photos</a>
+            <ul>
+                <li><a href="#">Portraits</a></li>
+                <li><a href="#">Nature</a></li>
+                <li><a href="#">Pets</a></li>
+                <li><a href="#">Off-road</a></li>
+            </ul>
+        </div>
+        <div class="about-me"><a href="#">About me</a></div>
+        <div class="contact"><a href="#">Contact</a></div>
+    </nav>
+</body>
+    {% block content%}
+
+    {% endblock %}
+</html>
