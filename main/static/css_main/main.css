@@ -1,13 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
 
 body {
-    background-color: rgb(80, 79, 79);
-    font-family: 'Raleway', sans-serif;
+  background-image: url("https://wallpapercave.com/wp/wp8421003.jpg");
+  background-size: 100%;
+  font-family: 'Raleway', sans-serif;
 }
 
 /* HEADER */
 .navigation {
-  width: 100%;
+  width: 50%;
   position: fixed;
   height: 50px;
   margin: 0;
@@ -19,6 +20,7 @@ body {
   opacity: 1;
   visibility: visible;
   -webkit-transition: all 0.3s ease;
+  border-radius: 10px;
 }
 
 .navigation a {
@@ -31,7 +33,7 @@ body {
 }
 
 .home, .about-me, .photos, .contact {
-  width: 10%;
+  width: 25%;
   float: left;
 }
 
@@ -85,4 +87,19 @@ body {
 .photos a:hover + ul,
 .photos ul:hover {
   display: block;
+}
+
+/*PHOTOS*/
+.photo img {
+  width: 30%;
+  height: 30%;
+  padding: 50px;
+}
+
+.photo {
+  padding: 50px;
+}
+
+.photo div {
+  padding: 50px;
 }
